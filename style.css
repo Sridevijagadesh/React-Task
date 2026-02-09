@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+}
+.container {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+textarea {
+  width: 250px;
+  height: 60px;
+}
+.warning {
+  color: red;
+}
