@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client";
 import React, { useState } from "react";
+import Preview from "./Preview";
 const Charater = () => {
   const [text, setText] = useState("");
   const [maxValue, setMaxValue] = useState(50);
@@ -23,9 +24,13 @@ const Charater = () => {
           style={{ color: text.length >= { maxValue } ? "red" : "black" }}
           onChange={(e) => setText(e.target.value)}
         ></textarea>
+
         <p>
           {text.length}/ {maxValue}
         </p>
+        {maxValue - text.length === 1 && (
+          <p style={{ color: "green" }}>your are closed to limit</p>
+        )}
         {text.length >= maxValue && (
           <p style={{ color: "red" }}>limit is excessed </p>
         )}
@@ -36,4 +41,4 @@ const Charater = () => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<Charater />);
+root.render(<Preview />);

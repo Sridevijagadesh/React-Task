@@ -6,17 +6,27 @@ body {
   text-align: center;
   height: 80vh;
 }
-.container {
-  height: 40vh;
+
+.btn {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  height: 30px;
+  gap: 20px;
   align-items: center;
 }
-textarea {
-  width: 250px;
-  height: 60px;
+.btn button {
+  background-color: #4edfd1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
-.warning {
-  color: red;
+.btn .active {
+  background-color: #2c5d58;
+}
+.content {
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
 }
